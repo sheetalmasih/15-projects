@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="loading">
-      <img src="preloader.gif" alt="preloader" class="loading__item" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video play and pause</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="video-container">
+        <video class="video" muted autoplay loop>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="video-content">
+            <h1>Video Project</h1>
+        </div>
+        <button class="btn">
+            <span class="play">Play</span>
+            <span class="push">Pause</span>
+            <span class="switch"></span>
+        </button>
     </div>
-      <video src="/video.mp4" autoplay loop></video>
-      <h1>video project</h1>
-      <button class="switch-btn">
-        <span>
-          play
-        </span>
-        <span>
-          pause
-        </span>
-        <span class="switch"></span>
-      </button>
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
